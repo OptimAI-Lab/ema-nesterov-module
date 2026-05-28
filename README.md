@@ -34,7 +34,7 @@ for data, target in dataloader:
 - The above example uses 1000 steps of lookahead warmup by `warmup_step=1000` (i.e., no lookahead at the begining) and 500 steps of lookahead rest by `rest_step=num_iterations - 500` (i.e., no lookahead at the end). 
 - `lookahead_stepsize=0.5` sets the maximum lookahead step size $\max_t \beta_t = 0.5$ in the lookahead update $\mathbf{x}^{t+1} = A_t(\mathbf{x}^t + \beta_t \mathbf{m}^t)$ with base optimizer $A_t$, e.g., in the above example,
 
-$$\beta_t = 0 \quad  \quad \quad \quad \quad  \quad ~ \text{for} \quad t\in [0, 1000) \cup [T-500, T],$$
+$$\beta_t = 0 \quad     \quad ~ \text{for} \quad t\in [0, 1000) \cup [T-500, T],$$
 $$\beta_t = 0.5 \cdot \frac{\alpha_t}{ \max_r \alpha_r } \quad \text{for} \quad t\in [1000, T-500),$$
 
 where $\alpha_t$ is the learning rate of optimizer $A_t$ and $T$ is `num_iterations`.
