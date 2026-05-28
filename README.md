@@ -1,5 +1,5 @@
 # EMA-Nesterov Module
-A python3 module for [EMA-Nesterov](https://arxiv.org/abs/2605.25395).
+A python3 module for [EMA-Nesterov](https://arxiv.org/abs/2605.25395) in PyTorch.
 ## Installation
 ```
 pip install git+https://github.com/OptimAI-Lab/ema-nesterov-module
