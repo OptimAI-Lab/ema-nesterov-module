@@ -40,4 +40,6 @@ $$\beta_t = 0.5 \cdot \frac{\alpha_t}{ \max_r \alpha_r } \quad \text{for} \quad 
 where $\alpha_t$ is the learning rate of optimizer $A_t$ and $T$ is `num_iterations`.
 
 ## More Examples
-See https://github.com/OptimAI-Lab/ema-nesterov.
+- See https://github.com/OptimAI-Lab/ema-nesterov for Llama / NanoGPT experiments in paper.
+- See https://github.com/KellerJordan/modded-nanogpt/pull/308 for NanoGPT Track 3 with Muon.
+- See https://github.com/KellerJordan/modded-nanogpt/pull/309 for NanoGPT Track 3 with Aurora.
